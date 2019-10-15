@@ -74,7 +74,7 @@ void KITTIDataOperator::ReadPcdFiles(std::string pcd_filename) {
 }
 
 void KITTIDataOperator::ReadImageFiles(std::string image_filename) {
-    cv::Mat kitti_image = cv::imread(image_filename, CV_LOAD_IMAGE_COLOR);
+    cv::Mat kitti_image = cv::imread(image_filename, cv::CV_LOAD_IMAGE_COLOR);
 
     // Sanity check if image is loaded correctly
     if (kitti_image.cols == 0 || kitti_image.rows == 0) {
